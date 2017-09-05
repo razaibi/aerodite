@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample File</title>
+    <link rel="stylesheet" href="style.min.css">
+    
+
+
+</head>
+<body>
+    <div class="content_holder">
+        <div class="top_bar">
+            <div class="top_bar_content">
+                <div class="top_bar_logo_holder top_bar_side centralize">
+                    <img src="aero_logo.png" class="top_bar_logo" />
+                </div>
+                <div class="top_bar_search_box_holder top_bar_side centralize">
+                    <input type="text" placeholder="What are you looking for?" class="search_box" />
+                </div>
+                <div class="top_bar_notif_holder top_bar_side centralize">
+                    <label for="gen_notif"><img src="notification_sm.png" class="top_bar_icon" /></label>
+                    <input type="checkbox" id="gen_notif" role="button">
+                    <div class="gen_notif">
+                        <ul class="notif_holder glide_left">
+                            <li>
+                                <p class="notif_title">System Upgrade</p>
+                                <p class="notif_desc">Please backup your data</p>
+                            </li>
+                            <li>
+                                <p class="notif_title">Version Upgrade</p>
+                                <p class="notif_desc">5 secs downtime expected today</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top_bar_notif_holder top_bar_side centralize">
+                    <label for="message_notif"><img src="message_sm.png" class="top_bar_icon" /></label>
+                    <input type="checkbox" id="message_notif" role="button">
+                    <div class="message_notif">
+                        <ul class="notif_holder glide_left">
+                            <li>
+                                <p class="notif_title">Sunita Williams</p>
+                                <p class="notif_time">Today</p>
+                                <p class="notif_desc">Hi from space</p>
+                            </li>
+                            <li>
+                                <p class="notif_title">Petkov</p>
+                                <p class="notif_time">Yesterday</p>
+                                <p class="notif_desc">Hello from the moon</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top_bar_pic_holder centralize">
+                    <img src="user_profile.jpg" class="top_bar_user_image" />
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="menu_bar">
+            <label for="menu_link" class="menu_link"><img src="list_menu.png" /></label>
+            <input type="checkbox" id="menu_link" role="button">
+            <ul class="menu_holder">
+                <li>
+                    my library
+                    <div class="menu_li_content">
+                        <a href="">types</a>
+                        <a href="">AFPs</a>
+                    </div>
+                </li>
+                <li>my favorites</li>
+                <li>+ add new</li>
+                <li>
+                    preview
+                    <div class="menu_li_content">
+                        <a href="">sub item 01</a>
+                        <a href="">sub item 02</a>
+                    </div>
+                </li>
+                <li onclick="open_hot_menu('hot_menu_list');"><span class="special">hot menu</span></li>
+            </ul>
+        </div>
+
+        <div class="hot_menu" id="hot_menu_list">
+            <div class="row">
+                <div class="hot_menu_list">
+                    <a class="hot_menu_closer slide_right" onclick="close_hot_menu('hot_menu_list');">close</a>
+                </div>
+            </div>
+            <ul class="hot_menu_list">  
+                <li><a href="#">Book Flights</a></li>
+                <li><a href="#">Explore Destinations</a></li>
+                <li><a href="#">Meet the Crew</a></li>
+                <li><a href="#">Project Aerodite</a></li>
+                <li><a href="#">Contact Us</a></li>
+                
+            </ul>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="panel_search_horizontal">
+                <div class="row">
+                    <h2 class="light_title">Banner</h2>
+                </div>
+                <div class="row">
+                    <div class="banner">
+                        <span class="banner_title top_space_md">Aerodite 0.1</span>
+                        <span class="banner_tag">Aerodynamic. Erudite. Light</span>
+                        <span class="banner_phrase text_white top_space_md">No Jquery. No Bootstrap. Stay Native.</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="panel_search_horizontal" id="search_panel">
+                <div class="row">
+                    <h2 class="light_title">Search Flights Style 01</h2>
+                </div>
+                <ul class="tab_header">
+                    <li>Search Flight</li>
+                    <li>Manage Booking </li>
+                    <li>Check-in</li>
+                </ul>
+                <ul class="tab_content">
+                    <li class="active">
+                        <div class="row">
+                            <div class="wing_span_2">
+                                <label>From</label>
+                                <input type="text" class="search_control wide_full" placeholder="From" value="Forth Worth" />
+                                <span class="label_note">Forth Worth International Airport</span>
+                            </div>
+                            <div class="wing_span_2">
+                                <label>To</label>
+                                <input type="text" class="search_control wide_full" placeholder="To" value="JFK" />
+                                <span class="label_note">JFK International Airport</span>
+                            </div>
+                            <div class="wing_span_2">
+                                <label>Departure</label>
+                                <input type="text" class="search_control wide_full" placeholder="dd/mm/yyyy" />
+                            </div>
+                            <div class="wing_span_2">
+                                <label>Return</label>
+                                <input type="text" class="search_control wide_full" placeholder="dd/mm/yyyy" />
+                            </div>
+                            <div class="wing_span_1">
+                                <label>Adult(s)</label>
+                                <input type="text" class="search_control wide_full" placeholder="Adults" />
+                            </div>
+                            <div class="wing_span_1">
+                                <label>Children</label>
+                                <input type="text" class="search_control wide_full" placeholder="Children" />
+                            </div>
+                            <div class="wing_span_1">
+                                <label>Infant(s)</label>
+                                <input type="text" class="search_control wide_full" placeholder="Infants" />
+                            </div>
+                            <div class="wing_span_1 centralize top_space_xs">
+                                <button class="btn_light btn_large" type="button">fly</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="wing_span_3">
+                                <label>PNR Number</label>
+                                <input type="text" class="search_control wide_full" placeholder="PNR Number" />
+                                <span class="label_note">Booking Reference Number</span>
+                            </div>
+                            <div class="wing_span_3">
+                                <label>Email</label>
+                                <input type="text" class="search_control wide_full" placeholder="Email" />
+                                <span class="label_note">Registered contact email</span>
+                            </div>
+
+                            <div class="wing_span_2 centralize top_space_sm">
+                                <button class="btn_dark btn_med" type="button">find booking</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="wing_span_3">
+                                <label>PNR Number</label>
+                                <input type="text" class="search_control wide_full" placeholder="PNR Number" />
+                                <span class="label_note">Reference/ PNR Number</span>
+                            </div>
+                            <div class="wing_span_3">
+                                <label>Departure Port</label>
+                                <input type="text" class="search_control wide_full" placeholder="Departure Port" />
+                            </div>
+                            <div class="wing_span_3">
+                                <label>Flight Number</label>
+                                <input type="text" class="search_control wide_full" placeholder="Flight Number" />
+                            </div>
+
+                            <div class="wing_span_2 centralize top_space_sm">
+                                <button class="btn_dark btn_med" type="button">check-in</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="panel_search_horizontal" id="search_panel">
+                <div class="row">
+                    <h2 class="light_title">Search Flights Style 02</h2>
+                </div>
+                <div class="row">
+                    <div class="wing_span_4">
+                        <label>From</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="From" value="Forth Worth" />
+                        <span class="label_note">Forth Worth International Airport</span>
+                    </div>
+                    <div class="wing_span_4">
+                        <label>To</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="To" value="JFK" />
+                        <span class="label_note">JFK International Airport</span>
+                    </div>
+
+                    <div class="wing_span_1">
+                        <label>Adult(s)</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="0" />
+                    </div>
+                    <div class="wing_span_1">
+                        <label>Children</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="0" />
+                    </div>
+                    <div class="wing_span_1">
+                        <label>Infant(s)</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="0" />
+                    </div>
+                    <div class="wing_span_1 centralize top_space_xs">
+                        <button class="btn_light btn_xlarge" type="button">fly</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="panel_search_horizontal" id="search_panel">
+                <div class="row">
+                    <h2 class="light_title">Search Flights Style 03</h2>
+                </div>
+                <div class="row">
+                    <div class="wing_span_8">
+                        <label>From > To</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="From > To" value="JFK to DFW" />
+                        <span class="label_note">JFK International Airport to Forth Worth International Airport</span>
+                    </div>
+                    
+
+                    <div class="wing_span_1">
+                        <label>Adult(s)</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="0" />
+                    </div>
+                    <div class="wing_span_1">
+                        <label>Children</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="0" />
+                    </div>
+                    <div class="wing_span_1">
+                        <label>Infant(s)</label>
+                        <input type="text" class="search_control search_control_high wide_full" placeholder="0" />
+                    </div>
+                    <div class="wing_span_1 centralize top_space_xs">
+                        <button class="btn_light btn_xlarge" type="button">fly</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="panel_search_horizontal" id="search_panel">
+                <div class="row">
+                    <h2 class="light_title">Search Flights Style 04 (with sample autosuggest)</h2>
+                </div>
+
+                <div class="panel_compact">
+                    <div class="row">
+                        <div class="wing_span_10">
+                            <div class="panel_compact_pax">
+                                
+                                <div class="wing_span_2 slide_right">
+                                    <label>Children</label>
+                                    <input type="text" class="search_control search_control_high wide_full panel_compact_pax_last centralize" placeholder="0" />
+                                </div>
+                                <div class="wing_span_2 slide_right" style="float:right;">
+                                    <label>Infant(s)</label>
+                                    <input type="text" class="search_control search_control_high wide_full panel_compact_pax_middle centralize" placeholder="0" />
+                                </div>
+                                <div class="wing_span_2 slide_right">
+                                    <label>Adult(s)</label>
+                                    <select class="search_control search_control_high wide_full panel_compact_pax_first centralize">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <input type="text" class="search_control search_control_high wide_full search_control_spcl" placeholder="where do you want to go?" id="sample_search" onkeyup="if (this.value != '') { document.getElementById('sample_suggest').style.display = 'block'; } else { document.getElementById('sample_suggest').style.display = 'none'; }" />
+                            <span class="label_note">see suggested results</span>
+                            <div class="row" id="sample_suggest" style="display:none;">
+                                <ul class="result_list">
+                                    <li class="result_destination"><p onclick="document.getElementById('sample_search').value = this.getAttribute('data-x');" data-x="DFW to JFK" >Forth Worth Int'l Aiport to JFK Int'l Airport</p></li>
+                                    <li class="result_destination"><p onclick="document.getElementById('sample_search').value = this.getAttribute('data-x');" data-x="DFW to HBE" >Forth Worth Int'l Aiport to Alexandria</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wing_span_2 centralize top_space_md">
+                            <button class="btn_light btn_xlarge" type="button">fly</button>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="wing_span_12">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+               
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="panel_search_horizontal">
+                <div class="row">
+                    <h2 class="light_title">Search Results Calendar</h2>
+                </div>
+                <div class="row">
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">SAT</div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">SUN</div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">MON</div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">TUE</div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">WED</div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">THU</div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize" s>FRI</div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            26th
+                            <span class="calender_price">89 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            27th
+                            <span class="calender_price">74 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            28th
+                            <span class="calender_price">89 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            29th
+                            <span class="calender_price">99 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            30th
+                            <span class="calender_price">127 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            31st
+                            <span class="calender_price">153 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box calendar_month">
+                            Nov
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            1st
+                            <span class="calender_price">102 KD</span>
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            2nd
+                            <span class="calender_price">99 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            3rd
+                            <span class="calender_price">102 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            4th
+                            <span class="calender_price">99 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            5th
+                            <span class="calender_price">109 KD</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            6th
+                            <span class="calender_price">141 KD</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="panel_search_horizontal">
+                <div class="row">
+                    <h2 class="light_title">Search Results Calendar (alternate)</h2>
+                </div>
+                <div class="row">
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">
+                            prev
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            SUN
+                            <span class="calendar_day_name">October 23</span>
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            MON
+                            <span class="calendar_day_name">October 24</span>
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            TUE
+                            <span class="calendar_day_name">October 25</span>
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            WED
+                            <span class="calendar_day_name">October 26</span>
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">THU
+                            <span  class="calendar_day_name">October 27</span>
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_day_name centralize">
+                            next
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            74 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            89 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            99 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            127 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            153 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            87 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            93 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            126 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            73 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            121 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="row">
+            <div class="panel_search_horizontal">
+                <div class="row">
+                    <h2 class="light_title">Flight Schedule</h2>
+                </div>
+                <div class="row">
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            Sun
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            Mon
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            Tue
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            Wed
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            Thu
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            Fri
+                            <span class="calendar_day_name">2 flights</span>
+                        </div>
+                    </div>
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_date centralize">
+                            Sat
+                            <span class="calendar_day_name">0 flights</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            DEP
+                            <span class="calendar_day_name">09:40 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            74 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            89 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            99 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            127 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            153 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            87 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            93 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            126 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            73 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            121 KD
+                        </div>
+                    </div>
+
+                    <div class="wing_span_1_3_4">
+                        <div class="calendar_box">
+                            -
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="social_holder">
+                <div class="wing_span_3">
+                    <div class="panel_feed">
+                        <div class="profile_pic_holder">
+                            <img src="user_profile.jpg" />
+                            <p class="para text_light">
+                                Raza Iqbal B.
+                            </p>
+                            <p>
+                                Information Tech.<br />
+                                1157 <br />
+                            </p>
+                            <p class="para text_dark">
+                                11 Projects<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="wing_span_7">
+                    <div class="panel_feed">
+                        <div class="row">
+                                <span class="banner_tag">Aerodynamic. Erudite. Light</span>
+                            <ul class="post_manifest">
+                                <li>
+                                    <div class="post_user">
+                                        Wilbur Wright<br />
+                                        <span class="text_light">OCC</span>
+                                    </div>
+                                    <div class="post_time">
+                                        3 hours ago
+                                    </div>
+                                    <div class="post_content">
+                                        <p>
+                                            This is the Aerodite standard platform for users. Any developers/ users willing to take advantage of this platform can do so by loggin on to <span class="text_light">http://www.github.com/razaibi/aerodite</span>.
+                                            <br />
+                                            <br />
+                                            This is an open source framework : the home of the Aerodite framework.
+                                        </p>
+                                    </div>
+                                    <div class="post_action">
+                                        <a href="" class="text_light">423 Likes</a>  <a href="" class="text_dark">1,046 Shares</a>
+                                    </div>
+                                    <ul class="post_comment_manifest">
+                                        <li>
+                                            <div class="post_user">
+                                                <h5>Comments</h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post_user">
+                                                Leonardi Da Vinci<br />
+                                                <span class="text_dark">Aeronautical Design</span>
+                                            </div>
+                                            <div class="post_time">2 mins ago</div>
+                                            <div class="post_content">
+                                                <p>
+                                                    I guess this is a great way for us to build applications.
+                                                </p>
+                                            </div>
+                                            <div class="post_action">
+                                                <a href="" class="text_light">17 Likes</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post_user">
+                                                Czeslaw Zbierański<br />
+                                                <span class="text_dark">Aviation Designer</span>
+                                            </div>
+                                            <div class="post_time">1 min ago</div>
+                                            <div class="post_content">
+                                                <p>
+                                                    I wish this was available at our time
+                                                </p>
+                                            </div>
+                                            <div class="post_action">
+                                                <a href="" class="text_light">101 Likes</a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+                        <div class="row">
+                            <ul class="post_manifest">
+                                <li>
+                                    <div class="post_user">
+                                        Neil Armstrong<br />
+                                        <span class="text_dark">Ex- NASA Astronaut</span>
+                                    </div>
+                                    <div class="post_time">
+                                        4 hours ago
+                                    </div>
+                                    <div class="post_content">
+                                        <p>
+                                            Jeez we could take this to the moon
+
+                                        </p>
+                                    </div>
+                                    <div class="post_action">
+                                        <a href="" class="text_light">9,423 Likes</a>  <a href="" class="text_dark">75,046 Shares</a>
+                                    </div>
+                                    <ul class="post_comment_manifest">
+                                        <li>
+                                            <div class="post_user">
+                                                <h5>Comments</h5>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post_user">
+                                                Random Joe<br />
+                                                <span class="text_dark">Conspiracy Theorist</span>
+                                            </div>
+                                            <div class="post_time">2 mins ago</div>
+                                            <div class="post_content">
+                                                <p>
+                                                    Thats if we could go back in time and check if you really went
+                                                </p>
+                                            </div>
+                                            <div class="post_action">
+                                                <a href="" class="text_light">0 Likes</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post_user">
+                                                Neil Armstrong<br />
+                                                <span class="text_dark">Ex- NASA Astronaut</span>
+                                            </div>
+                                            <div class="post_time">1 min ago</div>
+                                            <div class="post_content">
+                                                <p>
+                                                    Same can be said about your birth
+                                                </p>
+                                            </div>
+                                            <div class="post_action">
+                                                <a href="" class="text_light">979 Likes</a>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wing_span_3">
+                    <div class="panel_feed">
+                        <ul class="network_holder">
+                            <h4>My Networks</h4>
+                            <li>
+                                <p class="network_title">Data Science Exhibit</p>
+                                <p class="network_count">597 Members</p>
+                                <p class="network_desc">Platform for staff to express and share ideas, thoughts, etc.</p>
+                            </li>
+                            <li>
+                                <p class="network_title">Data Ex</p>
+                                <p class="network_count">1,407 Members</p>
+                                <p class="network_desc">Data Competition</p>
+                            </li>
+                            <li>
+                                <p class="network_title">Force Awakens</p>
+                                <p class="network_count">207 Members</p>
+                                <p class="network_desc">Star Wars Movie</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="panel">
+                <div class="row">
+                    <h2 class="light_title">Listing Styles</h2>
+                </div>
+                <ul class="result_list">
+                    <li>
+                        <p>
+                            <span class="result_no">01</span>  <span class="result_title"><span class="result_cap"> A</span>FCTP</span>
+                        </p>
+                        <p class="result_desc">Ab Initio Training Program</p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="result_no">02</span>  <span class="result_title"><span class="result_cap"> A</span>HM 560</span>
+                        </p>
+                        <p class="result_desc">A320 Aircraft Handling Manual</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="panel_flight top_space_md">
+                <div class="row">
+                    <h2 class="light_title">Flight Details</h2>
+                </div>
+
+                <div class="row">
+                    <div class="flight_destination glide_left">
+                        DFW
+                    </div>
+                    <div class="flight_interim">
+                        to
+                    </div>
+                    <div class="flight_destination glide_right">
+                        JFK
+                    </div>
+                    <div class="flight_class">Class <span class="premium_class">Business Class</span></div>
+                    <div class="flight_airport glide_left">
+                        Forth Worth International Airport
+                    </div>
+                    <div class="flight_airport glide_right">
+                        JFK International Airport
+                    </div>
+
+                    <div class="flight_time glide_left">
+                        23:40 PM
+                    </div>
+                    <div class="flight_stops glide_left">
+                        0 Stops
+                    </div>
+                    <div class="flight_time glide_right">
+                        02:10 AM
+                    </div>
+                    <div class="flight_day glide_left">
+                        23th October, 2016
+                    </div>
+                    <div class="flight_day glide_right">
+                        24th October, 2016
+                    </div>
+                    <div class="flight_pax_detail glide_left">
+                        1 X Adults
+                    </div>
+                    <div class="flight_pax_detail glide_right">
+                        123.000 KWD
+                    </div>
+                    <div class="flight_pax_detail glide_left">
+                        2 X Children
+                    </div>
+                    <div class="flight_pax_detail glide_right">
+                        93.000 KWD
+                    </div>
+                    <div class="flight_tax_detail glide_left">
+                        Taxes
+                    </div>
+                    <div class="flight_tax_detail glide_right">
+                        5.400 KWD
+                    </div>
+                    <div class="flight_total_detail glide_left">
+                        Total
+                    </div>
+                    <div class="flight_total_detail glide_right">
+                        191.400 KWD
+                    </div>
+                </div>
+                <div class="row centralize">
+                    <button type="button" class="btn_light btn_med">Confirm</button>
+                </div>
+
+            </div>
+
+            <div class="panel top_space_md">
+                <div class="row">
+                    <h2 class="light_title">Weather Widget</h2>
+                </div>
+                <div class="row centralize bottom_line">
+                    <div class="wing_span_3">
+                        <span class="weather_city">Airport Area, </span>
+                        <span class="weather_country">DFW</span>
+                    </div>
+                    <div class="wing_span_3">
+                        <span class="weather_type">Partly Cloudy </span>
+                    </div>
+                    <div class="wing_span_3">
+                        <span class="weather_temperature">23 F</span>
+                        <span class="weather_label">MIN</span>
+
+                    </div>
+                    <div class="wing_span_3">
+                        <span class="weather_temperature">37 F</span>
+                        <span class="weather_label">MAX</span>
+
+                    </div>
+
+                    <div class="wing_span_2">
+                        <img src="sunny_rain.png" alt="Sunny with Rain" />
+                    </div>
+
+                </div>
+
+                <div class="row centralize">
+                    <div class="wing_span_3">
+                        <span class="weather_city">Tampa Bay, </span>
+                        <span class="weather_country">Florida</span>
+                    </div>
+                    <div class="wing_span_3">
+                        <span class="weather_type">Heavy Rain </span>
+                    </div>
+                    <div class="wing_span_3">
+                        <span class="weather_temperature">68 F</span>
+                        <span class="weather_label">MIN</span>
+
+                    </div>
+                    <div class="wing_span_3">
+                        <span class="weather_temperature">99 F</span>
+                        <span class="weather_label">MAX</span>
+
+                    </div>
+
+                    <div class="wing_span_2">
+                        <img src="rain_storm.png" alt="Heavy Rain" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="panel top_space_md">
+                <div class="row">
+                    <h2 class="light_title">Weather Icons</h2>
+                </div>
+                <div class="row centralize">
+                    <div class="wing_span_3">
+                        <img src="cloud_sunny_hail.png" alt="Cloudy Sunny with Hail" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="cloud_drop.png" alt="Cloud" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="cloud_lightning.png" alt="Cloud Lightning" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="cloud_snowflake.png" alt="Cloud Snowflake" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="sunny_rain.png" alt="Sunny with Rain" />
+                    </div>
+
+                </div>
+                <div class="row centralize">
+                    <div class="wing_span_3">
+                        <img src="snow.png" alt="Snow" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="snow_sunny.png" alt="Snow with Sunny" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="storm_sunny.png" alt="Storm with Sunny" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="rain_storm.png" alt="Rain storm" />
+                    </div>
+                    <div class="wing_span_3">
+                        <img src="thunder_storm.png" alt="Thunder storm" />
+                    </div>
+
+                </div>
+            </div>
+
+            
+
+            <div class="panel top_space_md">
+
+                <div class="row">
+                    <h2 class="light_title">Form</h2>
+                </div>
+                <div class="row bottom_line">
+                    <label>Field With Drop Down</label>
+                    <select class="form_control form_select wide_md">
+                        <option>AFCTP</option>
+                        <option>Test Quality Manual</option>
+                    </select>
+                </div>
+                <div class="row bottom_line">
+                    <label>Small Width Textbox</label>
+                    <input type="text" class="form_control wide_sm" placeholder="Small Text Here" />
+                </div>
+                <div class="row bottom_line">
+                    <label>Medium Width Textbox</label>
+                    <input type="text" class="form_control wide_md" placeholder="Document Name" />
+                </div>
+                <div class="row bottom_line">
+                    <label>Title</label>
+                    <input type="text" class="form_control wide_lg" placeholder="Title" />
+                </div>
+                <div class="row bottom_line">
+                    <label>Multiple Drop Downs <span class="label_note">Put notes here</span></label>
+                    <select class="form_control form_select wide_sm">
+                        <option>Sample 1</option>
+                        <option>Sample 2</option>
+                        <option>Sample 3</option>
+                    </select>
+                    <select class="form_control form_select wide_xs">
+                        <option>Extra 01</option>
+                        <option>Extra 02</option>
+                    </select>
+                </div>
+
+                <div class="row bottom_line">
+                    <label>Radio Buttons</label>
+                    <div class="wing_span_3">
+                        <input type="radio" />Yes
+                    </div>
+                    <div class="wing_span_3">
+                        <input type="radio" />No
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="panel top_space_md">
+
+                <div class="row">
+                    <h2 class="light_title">Pop ups</h2>
+                </div>
+                <div class="row bottom_line">
+                    <div class="wing_span_6 centralize">
+                        <button type="button" class="btn_light btn_med" onclick="show_pop('sample_pop_01');">Sample Pop 01</button>
+                    </div>
+                    <div class="wing_span_6 centralize">
+                        <button type="button" class="btn_dark btn_med" onclick="show_pop('sample_pop_02');">Sample Pop 02</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel top_space_md" id="trd">
+                <div class="row">
+                    <h2 class="light_title">Tabs</h2>
+                </div>
+                <ul class="tab_header">
+                    <li>Manage Booking</li>
+                    <li>Book Now </li>
+                    <li>Search</li>
+                </ul>
+                <ul class="tab_content">
+                    <li class="active">
+                        <div>The quick brown fox jumps over the lazy dog.</div>
+                    </li>
+                    <li>
+                        <div>The moon is only a few miles away.</div>
+                    </li>
+                    <li>
+                        <div>If you cant do it... learn it.</div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="panel top_space_md">
+
+                <div class="row">
+                    <h2 class="light_title">Buttons</h2>
+                </div>
+
+                <div class="row bottom_line">
+                    <div class="wing_span_3 centralize">
+                        Dark
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_dark btn_xs">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_dark btn_sm">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_dark btn_med">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_dark btn_large">search now</button>
+                    </div>
+
+                </div>
+
+                <div class="row bottom_line">
+                    <div class="wing_span_3 centralize">
+                        Light
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_light btn_xs">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_light btn_sm">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_light btn_med">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_light btn_large">search now</button>
+                    </div>
+
+                </div>
+
+                <div class="row bottom_line">
+                    <div class="wing_span_3 centralize">
+                        Yellow
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_yellow btn_xs">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_yellow btn_sm">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_yellow btn_med">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_yellow btn_large">search now</button>
+                    </div>
+
+                </div>
+
+                <div class="row bottom_line">
+                    <div class="wing_span_3 centralize">
+                        Bright
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_bright btn_xs">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_bright btn_sm">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_bright btn_med">search now</button>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <button type="button" class="btn_bright btn_large">search now</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="panel top_space_md">
+
+                <div class="row">
+                    <h2 class="light_title">Labels</h2>
+                </div>
+                <div class="row bottom_line">
+                    <div class="wing_span_3 centralize">
+                        Color Types
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <span class="dark">Dark</span>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <span class="light">Light</span>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <span class="yellow">Yellow</span>
+                    </div>
+                    <div class="wing_span_3 centralize">
+                        <span class="bright">Bright</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="panel top_space_md">
+
+                <div class="row">
+                    <h2 class="light_title">Paragraph</h2>
+                </div>
+                <p class="para text_light">
+                    This is web framework built for airline applications
+                </p>
+                <p class="para text_dark">
+                    This is web framework built for airline applications
+                </p>
+            </div>
+
+
+            <div class="row">
+                <div class="panel_search_vertical" id="search_panel_vertical">
+                    <div class="row">
+                        <h2 class="light_title">Vertical Search</h2>
+                    </div>
+                    <ul class="tab_header">
+                        <li>Plan Travel</li>
+                        <li>Find Booking </li>
+                    </ul>
+                    <ul class="tab_content">
+                        <li class="active">
+                            <div class="row">
+                                <div class="wing_span_12 top_space_sm">
+                                    <label>From</label>
+                                    <input type="text" class="search_control wide_full" placeholder="From" value="Forth Worth" />
+                                    <span class="label_note">Forth Worth International Airport</span>
+                                </div>
+                                <div class="wing_span_12 top_space_sm">
+                                    <label>To</label>
+                                    <input type="text" class="search_control wide_full" placeholder="To" value="JFK" />
+                                    <span class="label_note">JFK International Airport</span>
+                                </div>
+                                <div class="wing_span_12 top_space_sm">
+                                    <label>Departure</label>
+                                    <input type="date" class="search_control wide_full" placeholder="dd/mm/yyyy" />
+                                </div>
+                                <div class="wing_span_12 top_space_sm">
+                                    <label>Return</label>
+                                    <input type="date" class="search_control wide_full" placeholder="dd/mm/yyyy" />
+                                </div>
+                                
+                                <div class="wing_span_12 centralize top_space_xs">
+                                    <button class="btn_light btn_large" type="button">fly</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="wing_span_12">
+                                    <label>Ref Number</label>
+                                    <input type="text" class="search_control wide_full" placeholder="Ref Number" />
+                                    <span class="label_note">eference Number</span>
+                                </div>
+                                <div class="wing_span_12">
+                                    <label>Email</label>
+                                    <input type="text" class="search_control wide_full" placeholder="Email" />
+                                    <span class="label_note">Registered contact email</span>
+                                </div>
+
+                                <div class="wing_span_12 centralize top_space_sm">
+                                    <button class="btn_dark btn_med" type="button">find booking</button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="panel_pop" id="sample_pop_01">
+        <div class="row no_padding">
+            <h2 class="light_title">Cassini Notices Curious Change</h2>
+            <p class="para text_light">
+                Spectacular photos captured by NASA's Cassini spacecraft reveal a curious color change over Saturn's north pole. The occurrence may be linked to seasonal changes and the planet's enormous hexagonal jet stream.
+            </p>
+        </div>
+    </div>
+    <div class="panel_pop" id="sample_pop_02">
+        <div class="row no_padding">
+            <h2 class="light_title">Solar Storm Lit Up Parts of Northern US</h2>
+            <p class="para text_light">
+                A moderate geomagnetic storm in Earth's magnetic field created some luminous auroras as far south as the northern United States last night.
+            </p>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script type="text/javascript" src="aerodite.js"></script>
+<script type="text/javascript">
+
+    var search_panel = new flyui().tab('search_panel');
+    var search_panel_v = new flyui().tab('search_panel_vertical');
+    var i = new flyui().tab('trd');
+
+    function show_pop(pop_name) {
+        var new_pop = new flyui().pop(pop_name);
+    }
+
+
+    function open_hot_menu(el) {
+        var curr_hot_menu = document.getElementById(el);
+        curr_hot_menu.style.display = 'block';
+    }
+
+    function close_hot_menu(el) {
+        var curr_hot_menu = document.getElementById(el);
+        curr_hot_menu.style.display = 'none';
+    }
+
+</script>
