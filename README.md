@@ -1,8 +1,47 @@
-# aerodite
-UI Framework
 
-Light weight responsive UI micro framework. Simple Components that are parituclarly relevant to travel applications for the web. However, can be used for other applications as well.
+## Introduction
 
-The project is centered around make an easily usable lightweight set of helper classes. 
+Aerodite is a simple and ready to use stylesheet. 
 
-This is an MIT project so feel free to twist turn and bend and make your own versions of this. Also, share your recommendations and inputs on how this can be improved.
+
+### Components
+
+Aerodite has some key components used on travel sites.
+
+
+## Features
+
+- **Fluid Experience**
+
+The design uses natural web components made in JS and HTML which keep the experience fluid and easy to navigate.
+
+- **No dependencies**
+
+Absolute Zero dependency on any framework. This keeps things easy to maintain and light.
+
+- **Responsive Design**
+
+The menus and main interface components have responsive styling making it easy to use on different devices.
+
+- **Lightweight**
+
+All the styling is extremely lightweight and will not require additional optimization for performance.
+
+
+
+## Who uses this?
+
+**Jazeera Airways**
+
+A popular budget airline based out of Kuwait uses this framework to develop their user experience.
+
+<center>
+
+![Image](https://jazeeraairways.com/assets/images/aero_logo.png)
+
+</center>
+
+## Happy Coding!!
+
+
+
