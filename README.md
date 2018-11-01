@@ -50,7 +50,7 @@ All the styling is extremely lightweight and will not require additional optimiz
 
 **Jazeera Airways**
 
-A popular budget airline based out of Kuwait uses this framework to develop their user experience.
+A popular budget airline based out of Kuwait uses Aerodite to develop their user experience.
 
 <center>
 
